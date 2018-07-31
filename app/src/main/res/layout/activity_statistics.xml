@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--A Layout where the positions of the children can be described in relation
+to each other or to the parent.
+
+Note that you cannot have a circular dependency between the size of the RelativeLayout and the position of its children.
+ For example, you cannot have a RelativeLayout
+whose height is set to WRAP_CONTENT and a child set to ALIGN_PARENT_BOTTOM.-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <ImageView
+        android:id="@+id/no_statistics_placeholder"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_statistics_100dp" />
+
+
+    <TextView
+        android:id="@+id/no_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/no_statistics_placeholder"
+        android:layout_marginTop="12dp"
+        android:text="@string/no_statistics_available"/>
+
+</RelativeLayout>

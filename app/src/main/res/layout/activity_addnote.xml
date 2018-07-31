@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--DrawerLayout充当窗口内容的顶级容器，允许从窗口的一个或两个垂直边缘拉出交互式“抽屉”视图。
+-->
+
+
 <android.support.v4.widget.DrawerLayout
     android:id="@+id/drawer_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
