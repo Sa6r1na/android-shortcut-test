@@ -24,6 +24,6 @@ public class AddNoteFragment extends Fragment implements AddNoteContract.View {
     @Override
     public void onActivityCreated(Bundle saveInstanceState){
         super.onActivityCreated(saveInstanceState);
-        mActionListener = new AddNoteP
+        mActionListener = new AddNotePresenter(Injection.p)
     }
 }
