@@ -25,22 +25,22 @@ public final class Note {
         mImageUrl = imageurl;
     }
 
-    public String getmId() {
+    public String getId() {
         return mId;
     }
 
     @Nullable
-    public String getmTitle() {
+    public String getTitle() {
         return mTitle;
     }
 
     @Nullable
-    public String getmDescription() {
+    public String getDescription() {
         return mDescription;
     }
 
     @Nullable
-    public String getmImageUrl() {
+    public String getImageUrl() {
         return mImageUrl;
     }
 
